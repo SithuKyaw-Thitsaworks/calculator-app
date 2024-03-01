@@ -10,10 +10,10 @@ To install Calculator API, follow these steps:
 git clone https://github.com/lute92/calculator-api.git
 
 2. Navigate to the project directory:
-cd calculator_api
+#### cd calculator_api
 
 3. Install dependencies:
-npm install
+#### npm install
 
 ## Running Unit Tests
     npm run test
