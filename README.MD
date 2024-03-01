@@ -1,4 +1,4 @@
-# Calculator Backend
+# Calculator API
 
 ## Description
 Calculator API is a Node.js application that provides an endpoint to calculate total price for given items. 
@@ -16,15 +16,15 @@ cd calculator_api
 npm install
 
 ## Running Unit Tests
-npm run test
+    npm run test
 
 ## Usage
 1. Starting the local server:
-npm run start
+    npm run start
 
 ## Deployment
 1. Go to the deployment directory:
-cd deployment
+    cd deployment
 
 2. Run docker-compose command
-docker-compose up -d
+    docker-compose up -d
