@@ -18,13 +18,13 @@ npm install
 ## Running Unit Tests
     npm run test
 
-## Usage
-1. Starting the local server:
+
+## Starting the local server:
     npm run start
 
 ## Deployment
-1. Go to the deployment directory:
+### Go to the deployment directory:
     cd deployment
 
-2. Run docker-compose command
+### Run docker-compose command
     docker-compose up -d
