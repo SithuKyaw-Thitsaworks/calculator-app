@@ -30,11 +30,12 @@ export class Service {
                 app.use(express.urlencoded({ extended: true }));
 
                 const routes = new Routes(calculator);
+                app.use(express.static(path.join(__dirname, 'public')));
                 app.use('/', routes.Router);
 
                 const PORT = process.env.PORT ?? 12000;
                 app.listen(PORT, () => {
-                    console.log(`Server is running on port ${PORT}`);
+                    console.log(`Server is running on port http://localhost:${PORT}/`);
                     resolve();
                 });
             }

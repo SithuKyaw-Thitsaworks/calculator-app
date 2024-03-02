@@ -1,7 +1,7 @@
 import express from 'express';
 import { Calculator } from './calculator';
 import { OrderItem } from './types/OrderItem';
-
+import path from 'path';
 export class Routes {
     private _router = express.Router();
     private _calculator: Calculator;
@@ -10,7 +10,20 @@ export class Routes {
         calculator: Calculator
     ) {
         this._calculator = calculator;
+
+        this._router.get('/', (req, res) => {
+            res.sendFile(path.join(__dirname, 'public', 'index.html'));
+        });
+
         this._router.post("/calculateTotalPrice", this._handleTotalPriceRequest.bind(this));
+
+        this._router.get("/getAllItems", this._handleGetAllItems.bind(this));
+    }
+
+    private _handleGetAllItems(req: express.Request, res: express.Response): void {
+        this._calculator.getAllItems().then((items)=> {
+            res.send(items);
+        });
     }
 
     private _handleTotalPriceRequest(req: express.Request, res: express.Response): void {

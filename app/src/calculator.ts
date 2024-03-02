@@ -30,8 +30,12 @@ export class Calculator implements ICalculator {
     }
 
     async init():Promise<void>{
-        this._dbItems = await this._dbRepo.getAllItems();
+        this._dbItems = await this.getAllItems();
     }
+    
+    async getAllItems():Promise<Item[]>{
+        return this._dbRepo.getAllItems();
+    }   
 
     async calculateTotalPrice(orderItems: OrderItem[], hasMemberCard: boolean = false): Promise<number> {
         try {
