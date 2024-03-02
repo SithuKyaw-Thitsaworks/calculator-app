@@ -7,10 +7,10 @@ Calculator API is a Node.js application that provides an endpoint to calculate t
 To install Calculator API, follow these steps:
 
 ### Clone the repository:
-    git clone https://github.com/lute92/calculator-api.git
+    git clone https://github.com/lute92/calculator-app.git
 
 ### Navigate to the project directory:
-    cd calculator_api
+    cd calculator_app
 
 ### Install dependencies:
     npm install
@@ -19,8 +19,9 @@ To install Calculator API, follow these steps:
     npm run test
 
 
-## Starting the local server:
-    npm run start
+## Running the app:
+    - npm run start
+    - open the User Interface to test the app at http://localhost:12000
 
 ## Deployment
 ### Go to the deployment directory:
