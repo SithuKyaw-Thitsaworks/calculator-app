@@ -1,7 +1,7 @@
 # Calculator APP
 
 ## Installation
-To install Calculator API, follow these steps:
+To install Calculator App, follow these steps:
 
 ### Clone the repository:
     git clone https://github.com/lute92/calculator-app.git
@@ -15,10 +15,9 @@ To install Calculator API, follow these steps:
 ## Running Unit Tests
     npm run test
 
-
 ## Running the app:
     - npm run start
-    - open the User Interface to test the app at http://localhost:12000
+    - open the User Interface to use the app at http://localhost:12000
 
 ## Deployment
 ### Go to the deployment directory:
