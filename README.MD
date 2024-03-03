@@ -1,7 +1,4 @@
-# Calculator API
-
-## Description
-Calculator API is a Node.js application that provides an endpoint to calculate total price for given items. 
+# Calculator APP
 
 ## Installation
 To install Calculator API, follow these steps:
